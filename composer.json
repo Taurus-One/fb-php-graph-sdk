@@ -1,18 +1,20 @@
 {
-    "name": "facebook/graph-sdk",
-    "description": "Facebook SDK for PHP",
-    "keywords": ["facebook", "sdk"],
+    "name": "taurus-one/fb-php-graph-sdk",
+    "description": "Facebook SDK for PHP, maintained by Taurus.One",
     "type": "library",
-    "homepage": "https://github.com/facebook/php-graph-sdk",
     "license": "Facebook Platform",
     "authors": [
         {
             "name": "Facebook",
             "homepage": "https://github.com/facebook/php-graph-sdk/contributors"
+        },
+        {
+            "name": "Taurus.One",
+            "homepage": "https://www.taurus.one"
         }
     ],
     "require": {
-        "php": "^5.4|^7.0"
+        "php": "^5.4|^7.0|^8.1"
     },
     "require-dev": {
         "phpunit/phpunit": "~4.0",
@@ -27,7 +29,9 @@
         "psr-4": {
             "Facebook\\": "src/Facebook/"
         },
-        "files": ["src/Facebook/polyfills.php"]
+        "files": [
+            "src/Facebook/polyfills.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
